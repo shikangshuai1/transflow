@@ -1,0 +1,331 @@
+/* TransFlow Popup Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  color: #1a1a2e;
+  background: #fff;
+}
+
+.popup {
+  width: 280px;
+}
+
+/* ── Header ── */
+
+.popup-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+.popup-header h1 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.version {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+/* ── Sections ── */
+
+.section {
+  padding: 12px 16px;
+}
+
+.section + .section {
+  border-top: 1px solid #eee;
+}
+
+.section-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+/* ── Select ── */
+
+.select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 13px;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* ── Quick Language Chips ── */
+
+.quick-langs {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.chip {
+  padding: 3px 12px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  font-size: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.chip:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.chip.active {
+  background: #667eea;
+  color: #fff;
+  border-color: #667eea;
+}
+
+/* ── Buttons ── */
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn.primary {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  opacity: 0.9;
+}
+
+.btn.secondary {
+  width: 100%;
+  margin-top: 8px;
+  background: #f0f0f0;
+  color: #555;
+}
+
+.btn.secondary:hover {
+  background: #e0e0e0;
+}
+
+.btn.outline {
+  width: 100%;
+  margin-top: 8px;
+  background: #fff;
+  color: #667eea;
+  border: 1px solid #667eea;
+}
+
+.btn.outline:hover {
+  background: #f4f2ff;
+}
+
+.btn.link {
+  background: none;
+  color: #667eea;
+  font-weight: 400;
+  padding: 4px 0;
+  font-size: 12px;
+}
+
+.btn.link:hover {
+  text-decoration: underline;
+}
+
+/* ── Actions ── */
+
+.actions {
+  text-align: center;
+}
+
+.hint {
+  display: block;
+  margin-top: 6px;
+  font-size: 11px;
+  color: #999;
+}
+
+/* ── Engine List ── */
+
+.engine-list {
+  list-style: none;
+}
+
+.engine-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.engine-name {
+  font-size: 12px;
+}
+
+.engine-badge {
+  font-size: 10px;
+  padding: 1px 8px;
+  border-radius: 10px;
+}
+
+.engine-badge.free {
+  background: #e6f9ed;
+  color: #1a7f3f;
+}
+
+.engine-badge.ready {
+  background: #e6f9ed;
+  color: #1a7f3f;
+}
+
+.engine-badge.needs-key {
+  background: #fef3e0;
+  color: #b25e00;
+}
+
+/* ── Footer ── */
+
+.popup-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  border-top: 1px solid #eee;
+}
+
+/* ── Back Button ── */
+
+.back-btn {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: auto;
+}
+.back-btn:hover { background: rgba(255,255,255,0.3); }
+
+/* ── API Key Rows ── */
+
+.privacy-note {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.apikey-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.apikey-label {
+  font-size: 11px;
+  font-weight: 600;
+  min-width: 60px;
+  color: #555;
+}
+
+.apikey-input {
+  flex: 1;
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: monospace;
+}
+
+.apikey-status {
+  font-size: 11px;
+  color: #ccc;
+  min-width: 16px;
+  text-align: center;
+}
+.apikey-status.ok { color: #1a7f3f; }
+
+.test-link {
+  font-size: 11px;
+  color: #667eea;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.test-link:hover { text-decoration: underline; }
+.test-link.ok { color: #1a7f3f; cursor: default; }
+.test-link.fail { color: #d32f2f; cursor: pointer; }
+.test-link.testing { color: #999; cursor: default; }
+
+/* ── Stats Grid ── */
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.stat-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.stat-val {
+  font-size: 20px;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.stat-lbl {
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+  margin-top: 2px;
+}
+
+.stat-sub {
+  font-size: 10px;
+  color: #999;
+}
+
+.stat-note {
+  font-size: 10px;
+  color: #bbb;
+  margin-top: 10px;
+  text-align: center;
+}
